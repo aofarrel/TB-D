@@ -1,6 +1,9 @@
 # How to Install and Run TB-D
 *If you are using the cloud compute platform Terra, please see [this documentation](./get_started_Terra.md) instead. If you are unsure if you want to use Terra, try TB-D without it first.*
 
+> [!IMPORTANT]  
+> This is an outdated version of TB-D that exists solely for reproducing published results. It is HIGHLY recommended you use a more recent version, because that has improved code and documentation.
+
 ## Basic Requirements
 TB-D is provided in a WDL format. To run WDLs, you need a WDL executor and containerization software. This means for most people, the dependencies are this:
 * Either miniwdl or Cromwell

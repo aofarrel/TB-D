@@ -1,0 +1,16 @@
+version: 1.2
+workflows:
+  - name: TBD_raw
+    subclass: WDL
+    primaryDescriptorPath: /TBD_raw.wdl
+    readMePath: /README.md
+    authors:
+      - orcid: 0000-0003-4896-1858
+  - name: TBD_sra
+    subclass: WDL
+    primaryDescriptorPath: /TBD_sra.wdl
+    readMePath: /README.md
+    testParameterFiles:
+      - /example_inputs/TBD_sra_terra.json
+    authors:
+      - orcid: 0000-0003-4896-1858

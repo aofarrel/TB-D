@@ -1,3 +1,6 @@
+# TBD version 6.2.4-REPRO
+# This is an archived version of TB-D that exists solely for reproducing published results -- it is HIGHLY recommended you use a more recent version!
+# The "version 1.0" string below references the WDL syntax version
 version 1.0
 
 import "https://raw.githubusercontent.com/aofarrel/clockwork-wdl/2.13.0/tasks/combined_decontamination.wdl" as clckwrk_combonation

@@ -1,4 +1,8 @@
 # TB-D
+
+> [!IMPORTANT]  
+> This is an outdated version of TB-D that exists solely for reproducing published results. It is HIGHLY recommended you use a more recent version, because that has improved code and documentation.
+
 TB-D is a system developed for genetic analysis and/or surveillance of *Mycobacterium tuberculosis*. Due to the system being built in a modular fashion, its codebase exists across several repos. This repo serves as the "parent" for the overall system.
 
 ## What makes up TB-D?
@@ -12,8 +16,8 @@ Although not part of either WDL workflow, we also use Ranchero to wrangle metada
 
 ## Installing/Running TB-D
 TB-D is designed to be as painless as possible to install.
-* If you are using the cloud-compute platform Terra to store your samples, please see HERE.
-* All other users, see HERE.
+* If you are using the cloud-compute platform Terra to store your samples, please see [HERE](./getting_started_Terra.md).
+* All other users, see [HERE](./getting_started_nonTerra.md).
 
 ## Limitations
 * TB-D can **only** analyze paired-end (PE) Illumina data, and will attempt to automatically filter out any SE Illumina samples, as well as any non-Illumina samples.
