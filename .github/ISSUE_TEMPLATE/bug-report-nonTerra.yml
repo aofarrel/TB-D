@@ -67,7 +67,7 @@ body:
     validations:
       required: true
 
-    - type: textarea
+  - type: textarea
     id: version
     attributes:
       label: "What version of TB-D are you running?"
