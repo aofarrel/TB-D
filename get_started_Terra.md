@@ -1,0 +1,2 @@
+# How to Install and Run TB-D on Terra
+*If you are not using the cloud compute platform Terra, please see [this documentation](./get_started_nonTerra.md) instead. If you are unsure if you want to use Terra, try TB-D without it first.*

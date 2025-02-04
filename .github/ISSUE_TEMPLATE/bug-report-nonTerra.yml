@@ -1,0 +1,110 @@
+name: "🐛 Bug Report for NOT-Terra"
+description: Create a new ticket for a bug that happened on any platform EXCEPT Terra.
+title: "🐛 [BUG] - <title>"
+labels: [
+  "bug", "not-terra"
+]
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I understand this issue form is PUBLIC and anything I write here, as well as any replies I make via GitHub.com or my GitHub-enabled email, will be PUBLIC.
+          required: true
+        - label: I affirm that nothing included in attached logs or reproducible steps contains PHI or other confidential data.
+          required: true
+   
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "Platform"
+      description: What platform are you running TB-D on?
+      multiple: true
+      options:
+        - Non-Terra cloud service (Google, Amazon, Azure, etc)
+        - Remote server - HPC
+        - Remote server - non-HPC
+        - Remove server - I don't know if it's an HPC or not
+        - Directly on my laptop/computer's own hardware
+    validations:
+      required: true
+
+  - type: dropdown
+    id: docker
+    attributes:
+      label: "Docker"
+      description: Does this platform support Docker?
+      multiple: true
+      options:
+        - Yes, it can use Docker normally
+        - Yes, but only in "rootless" mode
+        - No, I'm using Singularity
+        - No, I'm using some other Docker alternative
+        - No, containerization isn't supported at all
+        - I don't know
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: executor
+    attributes:
+      label: "Executor"
+      description: Which WDL executor(s) are you seeing this issue on?
+      options:
+        - label: miniwdl
+        - label: Cromwell
+        - label: other (please explain in description)
+    validations:
+      required: true
+
+  - type: textarea
+    id: systeminfo
+    attributes:
+      label: "System information"
+      description: Paste the output of the following command here `uname && uname -mp && docker info | grep "Docker Root Dir" && which python && java --version && which conda`
+      placeholder: Paste ALL lines of output here, even if you see "command not found".
+    validations:
+      required: true
+
+    - type: textarea
+    id: version
+    attributes:
+      label: "What version of TB-D are you running?"
+      description: Be aware this is not the VERSION 1.0 you see at the top of the file, that's required WDL syntax. I mean the version from GitHub.
+      placeholder: Place version information here...
+    validations:
+      required: true
+ 
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Please enter an explicit description of your issue
+      placeholder: Short and explicit description of your incident...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reprod
+    attributes:
+      label: "Reproducible steps (DO NOT POST PHI HERE)"
+      description: If possible to do so while EXCLUDING ANY AND ALL CONFIDENTIAL INFORMATION, please post a reproducible example of your problem.
+      value: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+      render: bash
+    validations:
+      required: true
+  
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: If possible to do so while EXCLUDING ANY AND ALL CONFIDENTIAL INFORMATION, please copy and paste any relevant log output.
+      render: bash
+    validations:
+      required: false
+
