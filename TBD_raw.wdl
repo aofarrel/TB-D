@@ -15,7 +15,7 @@ import "https://raw.githubusercontent.com/aofarrel/goleft-wdl/0.1.2/goleft_funct
 workflow TBD_raw {
 	input {
 		
-		# In the original 6.2.4 of this pipeline, some defaults varied from what you see here. This is because TBD_raw was orignally
+		# In the original 6.2.4 of this pipeline, some defaults varied from what you see here. This is because TBD_raw was originally
 		# just the CDPH version of TBD_sra, and CDPH has some different standards (some of which have since changed). Because what
 		# we published was always based on on TBD_sra 6.2.4's defaults, we've changed the defaults of this reproducible version of
 		# TBD_raw to better match TBD_sra 6.2.4's defaults.
@@ -141,7 +141,7 @@ workflow TBD_raw {
 	# This relies on your WDL executor being consistent with how it orders arrays. That SHOULD always be the case per
 	# the spec, but if things break catastrophically, let me save you some debug time: As of 2.9.2, clockwork-wdl's
 	# ref-included version of the variant caller has an option to output the bams and bais as a tarball. You can use
-	# that to recreate the simplier scatter of version 4.4.1 or earlier of myco. You will need to modify some tasks to
+	# that to recreate the simpler scatter of version 4.4.1 or earlier of myco. You will need to modify some tasks to
 	# untar things, of course.
 		if(!covstatsQC_skip_entirely) {
 	

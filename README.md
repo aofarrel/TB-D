@@ -12,7 +12,7 @@ At its core, TB-D consists of two WDL subworkflows:
 	b) myco_raw: Takes in raw (ie, not cleaned) FASTQ files directly
 2. Tree Nine -- takes in MAPLE-formatted diff files and places them on a phylogenetic tree using UShER
 
-Although not part of either WDL workflow, we also use Ranchero to wrangle metadata for decorating your phylogenetic trees using [Ranchero](https://github.com/aofarrel/Ranchero). Ranchero can be run 100% seperately from TB-D and is completely optional.
+Although not part of either WDL workflow, we also use Ranchero to wrangle metadata for decorating your phylogenetic trees using [Ranchero](https://github.com/aofarrel/Ranchero). Ranchero can be run 100% separately from TB-D and is completely optional.
 
 ## Installing/Running TB-D
 TB-D is designed to be as painless as possible to install.
@@ -24,12 +24,14 @@ TB-D is designed to be as painless as possible to install.
 * Docker is a soft requirement. Some people have reported successfully getting TB-D working with Singularity, but it's not officially supported.
 
 ## Contributing
-We welcome contributions, PRs, and issue reports. Whenever possible, please make try to make issue reports in the repo most relevent to your issue -- for example, if you are having issues with the Tree Nine subworkflow, please leave the issue in the Tree Nine repo instead of in this repo.
+We welcome contributions, PRs, and issue reports. Whenever possible, please make try to make issue reports in the repo most relevant to your issue -- for example, if you are having issues with the Tree Nine subworkflow, please leave the issue in the Tree Nine repo instead of in this repo.
 
 
 ## Citations
 
-#### clockwork
+#### clockwork / minos
+In this reproducible branch of TB-D, we use v0.11.3 of clockwork.
+
 > Hunt, Martin, Brice Letcher, Kerri M. Malone, Giang Nguyen, Michael B. Hall, Rachel M. Colquhoun, Leandro Lima, et al. “Minos: Variant Adjudication and Joint Genotyping of Cohorts of Bacterial Genomes.” Genome Biology 23, no. 1 (December 2022): 147. https://doi.org/10.1186/s13059-022-02714-x.
 
 #### Cortex
@@ -50,10 +52,12 @@ We welcome contributions, PRs, and issue reports. Whenever possible, please make
 #### seqtk
 > https://github.com/lh3/seqtk
 
-#### TBProfiler (version 4.4.2, database 2023-Mar-27)
-> Phelan, Jody E., Denise M. O’Sullivan, Diana Machado, Jorge Ramos, Yaa E. A. Oppong, Susana Campino, Justin O’Grady, et al. “Integrating Informatics Tools and Portable Sequencing Technology for Rapid Detection of Resistance to Anti-Tuberculous Drugs.” Genome Medicine 11, no. 1 (December 2019): 41. https://doi.org/10.1186/s13073-019-0650-x.
+#### TBProfiler
+In this reproducible branch of TB-D, we use two versions of TBProfiler:
+* "base" TBProfiler: version 4.4.2, database 2023-Mar-27
+* Theiagen's fork: v1.2.1, which itself is built upon TBProfiler version 4.4.2, database 2023-Jan-19
 
-Note that some versions of this pipeline specifically uses Thiagen's fork of TBProfiler. The pinned version of this fork that I use itself uses TBProfiler version 4.4.2, database 2023-Jan-19.
+> Phelan, Jody E., Denise M. O’Sullivan, Diana Machado, Jorge Ramos, Yaa E. A. Oppong, Susana Campino, Justin O’Grady, et al. “Integrating Informatics Tools and Portable Sequencing Technology for Rapid Detection of Resistance to Anti-Tuberculous Drugs.” Genome Medicine 11, no. 1 (December 2019): 41. https://doi.org/10.1186/s13073-019-0650-x.
 
 > Libuit, Kevin G., Emma L. Doughty, James R. Otieno, Frank Ambrosio, Curtis J. Kapsak, Emily A. Smith, Sage M. Wright, et al. 2023. “Accelerating Bioinformatics Implementation in Public Health.” Microbial Genomics 9 (7). https://doi.org/10.1099/mgen.0.001051.
 
