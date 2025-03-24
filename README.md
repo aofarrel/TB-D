@@ -1,6 +1,3 @@
-> [!IMPORTANT]  
-> You are currently on an outdated branch of TB-D that exists solely for reproducing published results. It is HIGHLY recommended you use [a more recent version](https://github.com/aofarrel/TB-D) in order to take advantage of new updates to clockwork, TBProfiler, and other dependencies.
-
 # TB-D
 
 TB-D is a system developed for genetic analysis and/or surveillance of *Mycobacterium tuberculosis*. Due to the system being built in a modular fashion, its codebase exists across several repos. This repo serves as the "parent" for the overall system.
