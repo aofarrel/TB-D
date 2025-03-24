@@ -1,0 +1,18 @@
+version: 1.2
+workflows:
+  - name: TBD_raw
+    subclass: WDL
+    primaryDescriptorPath: /TBD_raw.wdl
+    readMePath: /README.md
+    authors:
+      - orcid: 0000-0003-4896-1858
+    topic: Combines myco_raw and Tree Nine into one workflow. Input paired M. tuberculosis FQs, end up with VCFs and your samples upon a phylogenetic tree.
+  - name: TBD_sra
+    subclass: WDL
+    primaryDescriptorPath: /TBD_sra.wdl
+    readMePath: /README.md
+    testParameterFiles:
+      - /example_inputs/TBD_sra_terra.json
+    authors:
+      - orcid: 0000-0003-4896-1858
+    topic: Combines myco_sra and Tree Nine into one workflow. Input a bunch of NCBI BioSample accessions, end up with VCFs and your samples upon a phylogenetic tree.
