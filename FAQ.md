@@ -5,6 +5,20 @@ If you intend on using TB-D on the Terra website, please see [Get Started on Ter
 For all other users, please see [this webpage](.get_started_nonTerra.md) instead.
 
 
+### What license is TB-D using?
+**Nothing in here should be construed as legal advice.**
+TB-D relies upon TBProfiler, which is GPL 3.0 licensed. To the best of my knowledge, all other components are MIT licensed. My understanding is that components of TB-D that directly rely upon TBProfiler therefore must be GPL 3.0 licensed, including:
+* myco_raw
+* myco_sra
+* TBD_raw
+* TBD_sra
+* TBProfiler-specific tasks and workflows
+
+However, other components such as the entire Tree Nine subworkflow are MIT licensed.
+
+Ranchero, which is not included in TB-D but linked in this repo, is GPL 3.0 licensed.
+
+
 ### Is support for non-Illumina data planned?
 Not at the moment, because the decontamination and variant calling steps use clockwork, which strictly requires PE Illumina.
 

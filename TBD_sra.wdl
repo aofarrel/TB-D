@@ -1,7 +1,7 @@
 version 1.0
 
 import "https://raw.githubusercontent.com/aofarrel/myco/7.0.3/myco_sra.wdl" as myco_WF
-import "https://raw.githubusercontent.com/aofarrel/tree_nine/0.1.0/tree_nine.wdl" as TreeNine_WF
+import "https://raw.githubusercontent.com/aofarrel/tree_nine/0.1.1/tree_nine.wdl" as TreeNine_WF
 
 workflow TBD_sra {
 	input {
