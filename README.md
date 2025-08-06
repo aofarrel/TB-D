@@ -1,4 +1,4 @@
-# TB-D
+# TB-D (also known as UShER-TB)
 
 TB-D is a system developed for genetic analysis and/or surveillance of *Mycobacterium tuberculosis*. Due to the system being built in a modular fashion, its codebase exists across several repos. This repo serves as the "parent" for the overall system.
 
