@@ -3,7 +3,7 @@
 TB-D is a system developed for genetic analysis and/or surveillance of *Mycobacterium tuberculosis*. Due to the system being built in a modular fashion, its codebase exists across several repos. This repo serves as the "parent" for the overall system.
 
 ## What makes up TB-D?
-At its core, TB-D consists of two WDL subworkflows:
+At its core, TB-D consists of two WDL workflows:
 1. myco -- cleans & decontaminates FASTQ files, runs TBProfiler, calls variants, generates MAPLE-formatted diff files
 	a) myco_sra: Takes in a file of BioSample accessions to download from SRA
 	b) myco_raw: Takes in raw (ie, not cleaned) FASTQ files directly
@@ -17,11 +17,12 @@ TB-D is designed to be as painless as possible to install.
 * All other users, see [HERE](./getting_started_nonTerra.md).
 
 ## Limitations
-* TB-D can **only** analyze paired-end (PE) Illumina data, and will attempt to automatically filter out any SE Illumina samples, as well as any non-Illumina samples.
-* Docker is a soft requirement. Some people have reported successfully getting TB-D working with Singularity, but it's not officially supported.
+* TB-D can **only** analyze paired-end (PE) Illumina data
+	* TB-D will attempt to silently filter out SE Illumina, as well as any non-Illumina samples
+* Docker is required. Some people have reported successfully getting TB-D working with Singularity, but it's not officially supported.
 
 ## Contributing
-We welcome contributions, PRs, and issue reports. Whenever possible, please make try to make issue reports in the repo most relevant to your issue -- for example, if you are having issues with the Tree Nine subworkflow, please leave the issue in the Tree Nine repo instead of in this repo.
+We welcome contributions, PRs, and issue reports. Whenever possible, please make try to make issue reports in the repo most relevant to your issue -- for example, if you are having issues with the Tree Nine workflow, please leave the issue in the Tree Nine repo instead of in this repo.
 
 
 ## Citations
