@@ -13,8 +13,8 @@ Although not part of either WDL workflow, we also use Ranchero to wrangle metada
 
 ## Installing/Running TB-D
 TB-D is designed to be as painless as possible to install.
-* If you are using the cloud-compute platform Terra to store your samples, please see [HERE](./getting_started_Terra.md).
-* All other users, see [HERE](./getting_started_nonTerra.md).
+* If you are using the cloud-compute platform Terra to store your samples, please see [HERE](https://github.com/aofarrel/TB-D/wiki/Running-TB%E2%80%90D-on-Terra).
+* All other users, see [HERE](./get_started_nonTerra.md).
 
 ## Limitations
 * TB-D can **only** analyze paired-end (PE) Illumina data
